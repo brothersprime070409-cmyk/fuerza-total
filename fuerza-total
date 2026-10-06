@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fuerza Total · Entrena como los que ves en redes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0A0A0C;--surface:#17181C;--ink:#F5F5F5;--muted:#9A9CA3;--line:#2A2B30;--accent:#FF2E2E;--on-accent:#fff;--head:"Anton","Arial Narrow",sans-serif;}
+*{box-sizing:border-box;}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,sans-serif;line-height:1.55;}
+.wrap{max-width:860px;margin:0 auto;padding:0 24px;}
+h1,h2{font-family:var(--head);font-weight:400;text-transform:uppercase;}
+
+header{position:relative;padding:130px 24px 110px;overflow:hidden;background:#000;}
+header::before{content:"01";position:absolute;right:-.05em;top:-.22em;font-family:var(--head);font-size:min(42vw,420px);color:transparent;-webkit-text-stroke:1px #262626;line-height:1;pointer-events:none;}
+header .wrap{position:relative;}
+.kicker{display:block;color:var(--bg);background:var(--accent);font-weight:800;letter-spacing:.1em;text-transform:uppercase;font-size:.75rem;margin:0 0 40px;padding:6px 12px;width:fit-content;}
+.title-wrap{position:relative;display:inline-block;margin:0 0 30px;padding:10px 6px;}
+.title-wrap::before{content:"";position:absolute;inset:-6% -4%;background:radial-gradient(60% 70% at 30% 40%,var(--accent) 0%,rgba(255,46,46,.45) 45%,transparent 75%);filter:blur(22px);border-radius:52% 48% 60% 40%/46% 56% 44% 54%;z-index:0;animation:blob 9s ease-in-out infinite;}
+@keyframes blob{0%,100%{border-radius:52% 48% 60% 40%/46% 56% 44% 54%;transform:rotate(0deg);}50%{border-radius:40% 60% 46% 54%/54% 44% 56% 46%;transform:rotate(3deg);}}
+@media(prefers-reduced-motion:reduce){.title-wrap::before{animation:none;}}
+h1{position:relative;z-index:1;font-size:clamp(3rem,12vw,5.8rem);line-height:.92;letter-spacing:-.01em;max-width:11ch;margin:0;}
+header p{color:var(--muted);max-width:22em;margin:0 0 36px;font-size:.95rem;}
+.cta{display:inline-block;background:var(--accent);color:var(--on-accent);font-family:var(--head);text-transform:uppercase;letter-spacing:.02em;font-size:1.3rem;padding:18px 40px;border-radius:0;text-decoration:none;}
+.cta.outline{background:transparent;color:var(--ink);border:2px solid var(--line);}
+
+section{position:relative;padding:64px 0;border-top:1px solid var(--line);}
+#servicios{background:radial-gradient(70% 140% at 85% 0%,rgba(255,46,46,.07),transparent 60%);}
+#precios{background:radial-gradient(60% 120% at 10% 100%,rgba(255,46,46,.07),transparent 60%);}
+#contacto{background:radial-gradient(70% 140% at 50% 0%,rgba(255,46,46,.08),transparent 65%);}
+section .wrap > h2{font-size:clamp(1.8rem,5vw,2.4rem);margin:0 0 8px;}
+.lead{color:var(--muted);margin:0 0 36px;max-width:30em;}
+#contacto .wrap{text-align:center;}
+#contacto form{margin:0 auto;text-align:left;}
+#contacto .whats{text-align:center;}
+.grid{display:flex;flex-wrap:wrap;gap:18px;}
+.card{flex:1 1 220px;background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);padding:24px;}
+.card h3{font-family:var(--head);text-transform:uppercase;font-weight:400;font-size:1.15rem;margin:0 0 8px;letter-spacing:.01em;}
+.card p{color:var(--muted);margin:0;font-size:.92rem;}
+
+.plan{flex:1 1 230px;background:var(--surface);border:1px solid var(--line);padding:28px 22px;text-align:center;}
+.plan.feat{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent),0 20px 50px -20px rgba(255,46,46,.35);}
+.plan h3{font-family:var(--head);text-transform:uppercase;font-weight:400;font-size:1.2rem;margin:0 0 6px;}
+.plan .price{font-family:var(--head);font-size:2.2rem;margin:10px 0 16px;}
+.plan .price span{font-family:system-ui,sans-serif;font-size:.85rem;color:var(--muted);}
+.plan ul{list-style:none;padding:0;margin:0;color:var(--muted);font-size:.9rem;}
+.plan li{padding:6px 0;border-top:1px solid var(--line);}
+.plan li:first-child{border-top:none;}
+
+form{max-width:460px;display:flex;flex-direction:column;gap:14px;}
+label{font-size:.85rem;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;}
+input,textarea{width:100%;padding:13px 14px;border-radius:0;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:inherit;}
+textarea{resize:vertical;min-height:100px;}
+.submit{background:var(--accent);color:var(--on-accent);border:none;padding:14px;font-family:var(--head);text-transform:uppercase;font-size:1.1rem;letter-spacing:.02em;cursor:pointer;}
+.whats{margin-top:26px;}
+.whats a{display:inline-flex;align-items:center;gap:8px;background:#25D366;color:#fff;font-weight:700;padding:13px 26px;text-decoration:none;}
+
+footer{padding:30px 0;text-align:center;color:var(--muted);font-size:.85rem;}
+@media(max-width:600px){.grid{flex-direction:column;}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <p class="kicker">No más excusas</p>
+    <div class="title-wrap"><h1>Conviértete en tu mejor versión</h1></div>
+    <p>El nivel que ves en redes sociales empieza aquí, con entrenadores que ya pasaron por ahí.</p>
+    <a class="cta" href="#precios">Quiero empezar hoy</a>
+  </div>
+</header>
+
+<section id="servicios"><div class="wrap">
+  <h2>Lo que entrenas aquí</h2>
+  <p class="lead">Nada de máquinas aburridas. Cada sesión está pensada para que veas cambios rápido.</p>
+  <div class="grid">
+    <div class="card"><h3>Transformación</h3><p>Rutinas de fuerza e hipertrofia con seguimiento de progreso real.</p></div>
+    <div class="card"><h3>HIIT & funcional</h3><p>Circuitos de alta intensidad en grupo, para quemar y no aburrirte.</p></div>
+    <div class="card"><h3>Coaching 1 a 1</h3><p>Un entrenador que revisa tu técnica y ajusta tu plan cada semana.</p></div>
+  </div>
+</div></section>
+
+<section id="precios"><div class="wrap">
+  <h2>Elige tu plan</h2>
+  <p class="lead">Sin letra chiquita. Cancela cuando quieras.</p>
+  <div class="grid">
+    <div class="plan"><h3>Básico</h3><div class="price">$399<span>/mes</span></div>
+      <ul><li>Acceso 6am–10pm</li><li>Área de pesas</li><li>1 clase/semana</li></ul></div>
+    <div class="plan feat"><h3>Fuerza Total</h3><div class="price">$599<span>/mes</span></div>
+      <ul><li>Acceso ilimitado</li><li>Clases ilimitadas</li><li>Rutina personalizada</li></ul></div>
+    <div class="plan"><h3>Elite</h3><div class="price">$999<span>/mes</span></div>
+      <ul><li>Todo lo anterior</li><li>4 sesiones 1 a 1</li><li>Plan de nutrición</li></ul></div>
+  </div>
+</div></section>
+
+<section id="contacto"><div class="wrap">
+  <h2>Reclama tu primer plan</h2>
+  <p class="lead">Evaluación física, rutina inicial y una semana de prueba sin compromiso.</p>
+  <form onsubmit="event.preventDefault(); alert('Formulario de prueba.');">
+    <div><label for="n">Nombre</label><input id="n" placeholder="Tu nombre completo" required></div>
+    <div><label for="e">Correo</label><input id="e" type="email" placeholder="tu@correo.com" required></div>
+    <div><label for="m">¿Qué quieres lograr?</label><textarea id="m" placeholder="Ej. bajar de peso, ganar músculo, prepararme para una competencia..."></textarea></div>
+    <button class="submit" type="submit">Enviar</button>
+  </form>
+  <div class="whats">
+    <a href="https://wa.me/529611340680?text=Hola%2C%20quiero%20mi%20plan%20gratis" target="_blank" rel="noopener noreferrer">✆ Escríbenos por WhatsApp</a>
+  </div>
+</div></section>
+
+<footer>Fuerza Total &copy; 2026</footer>
+
+</body>
+</html>
